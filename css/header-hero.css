@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+.cabecalho {
+    background-color: #1e5a04;
+}
+
+.cabecalho__container {
+    width: min(1200px, 90%);
+    min-height: 84px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho__logo img {
+    display: block;
+    width: 80px;
+}
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background-image:
+        linear-gradient(90deg, rgba(16, 33, 23, 0.9), rgba(16, 33, 23, 0.1)),
+        url("../assets/img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__conteudo {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    color: #fff;
+}
