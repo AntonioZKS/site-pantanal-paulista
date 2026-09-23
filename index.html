@@ -4,134 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"c
-        content="Conheça a Região Turística Pantanal Paulista, suas cidades, eventos e belezas naturais.">
+    <meta name="description" content="Conheça a Região Turística Pantanal Paulista, suas cidades, eventos e belezas naturais.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header-hero.css">
 
     <title>Pantanal Paulista | Turismo e Natureza</title>
-
-    <!-- Ícones do menu -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
-
-    <!-- Fonte principal -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Nosso CSS -->
-    <link rel="stylesheet" href="css/header-hero.css">
 </head>
 
 <body>
 
-    <header class="cabecalho">
-        <div class="cabecalho__container">
+    <a class="link-salto" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
-            <a href="#inicio" class="cabecalho__logo" aria-label="Ir para o início do site">
-                <img src="assets/imagens/logo/logo-pantanal.png" alt="Logotipo da Região Turística Pantanal Paulista">
+    <header class="site-header">
+        <div class="site-header__container">
+            <a class="site-header__brand" href="#inicio" aria-label="Pantanal Paulista - início">
+                <span class="site-header__brand-name">Pantanal Paulista</span>
             </a>
 
-            <nav class="menu-principal" aria-label="Navegação principal">
-                <ul class="menu-principal__lista">
+            <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false">
+                <span class="menu-toggle__label">Menu</span>
+            </button>
 
-                    <li class="menu-principal__item">
-                        <a href="#inicio" class="menu-principal__link ativo" aria-current="page">
-                            <span class="material-symbols-rounded menu-principal__icone" aria-hidden="true">
-                                home
-                            </span>
-
-                            <span class="menu-principal__texto">
-                                Início
-                            </span>
-                        </a>
+            <nav class="main-navigation" id="menu-principal" aria-label="Navegação principal">
+                <ul class="main-navigation__list">
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#inicio"
+                            aria-current="page">Início</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#cidades">Cidades</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#eventos">Eventos</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#quem-somos">Quem somos</a>
                     </li>
-
-                    <li class="menu-principal__item">
-                        <a href="#cidades" class="menu-principal__link">
-                            <span class="material-symbols-rounded menu-principal__icone" aria-hidden="true">
-                                map
-                            </span>
-
-                            <span class="menu-principal__texto">
-                                Cidades
-                            </span>
-                        </a>
-                    </li>
-
-                    <li class="menu-principal__item">
-                        <a href="#eventos" class="menu-principal__link">
-                            <span class="material-symbols-rounded menu-principal__icone" aria-hidden="true">
-                                event
-                            </span>
-
-                            <span class="menu-principal__texto">
-                                Eventos
-                            </span>
-                        </a>
-                    </li>
-
-                    <li class="menu-principal__item">
-                        <a href="#quem-somos" class="menu-principal__link">
-                            <span class="material-symbols-rounded menu-principal__icone" aria-hidden="true">
-                                groups
-                            </span>
-
-                            <span class="menu-principal__texto">
-                                Quem Somos
-                            </span>
-                        </a>
-                    </li>
-
-                    <li class="menu-principal__item">
-                        <a href="#contato" class="menu-principal__link">
-                            <span class="material-symbols-rounded menu-principal__icone" aria-hidden="true">
-                                mail
-                            </span>
-
-                            <span class="menu-principal__texto">
-                                Contato
-                            </span>
-                        </a>
-                    </li>
-
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#contato">Contato</a></li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
-    <main>
-
-        <section class="hero" id="inicio">
-            <div class="hero__conteudo">
-
-                <p class="hero__rotulo">
-                    Região Turística Pantanal Paulista
-                </p>
-
-                <h1 class="hero__titulo">
-                    Pesca esportiva, natureza e aventura no coração do interior paulista.
-                </h1>
-
-                <a href="#cidades" class="hero__botao">
-                    Veja as cidades
-                </a>
-
+    <main id="conteudo-principal">
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <p class="hero__eyebrow">Região Turística Pantanal Paulista</p>
+                    <h1 class="hero__title" id="hero-title">Pesca esportiva, natureza e aventura no coração do interior
+                        paulista.</h1>
+                    <p class="hero__description">Descubra destinos, experiências e paisagens que tornam o Pantanal
+                        Paulista único.</p>
+                    <a class="hero__action" href="#cidades">Conheça as cidades</a>
+                </div>
             </div>
         </section>
 
-        <section id="cidades">
+        <section class="content-section" id="cidades" aria-labelledby="cidades-title">
+            <h2 id="cidades-title">Cidades</h2>
             <!-- Pedro Luis -->
         </section>
 
-        <section id="eventos">
+        <section class="content-section" id="eventos" aria-labelledby="eventos-title">
+            <h2 id="eventos-title">Eventos</h2>
             <!-- Enzo -->
         </section>
 
-        <section id="quem-somos">
+        <section class="content-section" id="quem-somos" aria-labelledby="quem-somos-title">
+            <h2 id="quem-somos-title">Quem somos</h2>
             <!-- João Vitor -->
+        </section>
+
+        <section class="content-section" id="contato" aria-labelledby="contato-title">
+            <h2 id="contato-title">Contato</h2>
         </section>
     </main>
 
-    <footer>
-        <!-- Kauê -->
+    <footer class="site-footer">
+        <!-- Rodapé -->
     </footer>
 </body>
 

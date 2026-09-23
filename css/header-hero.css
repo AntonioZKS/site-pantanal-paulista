@@ -11,11 +11,11 @@ body {
     font-family: "Outfit", sans-serif;
 }
 
-.cabecalho {
+.site-header {
     background-color: #1e5a04;
 }
 
-.cabecalho__container {
+.site-header__container {
     width: min(1200px, 90%);
     min-height: 84px;
     margin: 0 auto;
@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
 }
 
-.cabecalho__logo img {
+.site-header__brand img {
     display: block;
     width: 80px;
 }
@@ -35,13 +35,33 @@ body {
     align-items: center;
     background-image:
         linear-gradient(90deg, rgba(16, 33, 23, 0.9), rgba(16, 33, 23, 0.1)),
-        url("../assets/img/banner.jpg");
+        url("../assets/img/banner.png");
     background-size: cover;
     background-position: center;
 }
 
-.hero__conteudo {
+.hero__container {
     width: min(1200px, 90%);
     margin: 0 auto;
+}
+
+.hero__content {
+    max-width: 680px;
     color: #fff;
+}
+.main-navigation__list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-navigation__link {
+    display: block;
+    padding: 12px 16px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 16px;
 }
